@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <link rel="shortcut icon" href="https://bomgar.beldon.com/appliance/content/favicon.ico" type="image/x-icon" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="refresh" content="595" />
+    <title>Bomgar Virtual Appliance</title>
+    <link href="https://bomgar.beldon.com/appliance/content/style.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="https://bomgar.beldon.com/appliance/content/noframe.js"></script>
+    <script type="text/javascript" src="https://bomgar.beldon.com/appliance/content/prototype.js"></script>
+    <script type="text/javascript" src="https://bomgar.beldon.com/appliance/content/appliance.js"></script>
+
+</head>
+
+<body>
+    <!-- HEADER -->
+    <div id="container" style="width: 600px;">
+        
+        <!-- POC Banner -->
+        <div style="background-color: #ff8c00; color: white; text-align: center; padding: 8px 16px; font-weight: bold; font-size: 12px; letter-spacing: 1px; margin-bottom: 10px; border-radius: 4px;">
+            FIRECOMPASS POC
+        </div>
+
+        <div id="header" class="contentBox">
+            <div style="margin: 10px 0;">
+                <table width="100%" border="0">
+                    <tr>
+                        <td>
+                            <div style="height: 30px;">
+                                <a href="http://www.bomgar.com/" target="_blank">
+                                    <img src="https://bomgar.beldon.com/appliance/content/bomgar177.jpg" alt="Bomgar"
+                                        title="Remote Support Solutions from Bomgar" width="177" height="30" />
+                                </a>
+                            </div>
+                        </td>
+                        <td align="right" style="white-space:nowrap">
+                            <div class="pageTitle">
+                                Virtual Appliance LOGIN
+                            </div>
+                            <div><img style="vertical-align:bottom" src="https://bomgar.beldon.com/appliance/content/globe.png" /> <span
+                                    class="language_selection">
+                                    English (US)
+                                </span>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+        <!-- /HEADER -->
+
+
+        <div class="contentBox">
+            <h1>Login</h1>
+            <form action="" method="post" autocomplete="off">
+                <!-- Hack to disable auto-complete on Chrome 34+ -->
+                <input type="password" name="fake_password" id="fake_password" style="display:none" />
+                <input type="hidden" name="form_id" value="0qSR3BZOeBmKp1jXA43/kUq0TcJZGPFFGhA24hL7BmI=" />
+                <table class="padding" style='margin: 4em auto;'>
+                    <tr>
+                        <th scope="row"><label for="username">Username</label></th>
+                        <td><input type="text" name="login[username]" id="username" style="width: 16em;"
+                                autocomplete="off" /></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><label for="password">Password</label></th>
+                        <td><input type="password" name="login[password]" id="password" style="width: 16em;"
+                                autocomplete="off" /></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="hidden" name="login[submit]" value="Login" /><input type="submit"
+                                name="submit_button" value="Login" /></td>
+                    </tr>
+                </table>
+            </form>
+
+            <div class="contentSection">
+                <div style="width: 280px; margin: 0 auto; text-align: left;">
+                    Cookies must be enabled to Login
+                </div>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <div id="footer" class="contentBox">
+            Copyright &copy; 2002-2025 Bomgar Corporation. Redistribution Prohibited. All Rights Reserved.
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        if (document.getElementById('username') && document.getElementById('username').type != 'hidden') {
+            document.getElementById('username').focus();
+        }
+    </script>
+
+</body>
+
+</html>
