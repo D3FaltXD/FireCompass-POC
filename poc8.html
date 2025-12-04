@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EBRADI - Login</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+            background-color: #1a1a1a;
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .poc-banner {
+            background-color: #ff6b6b;
+            color: #ffffff;
+            text-align: center;
+            padding: 8px 0;
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .header {
+            background-color: #1e3a47;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .logo-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .logo {
+            height: 40px;
+        }
+
+        .subtitle {
+            color: #a8b2b8;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .main-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+
+        .login-container {
+            width: 100%;
+            max-width: 400px;
+        }
+
+        h1 {
+            font-size: 32px;
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: 12px;
+        }
+
+        .subtitle-text {
+            text-align: center;
+            color: #b8b8b8;
+            font-size: 14px;
+            margin-bottom: 40px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 14px;
+            color: #e0c896;
+        }
+
+        .input-wrapper {
+            position: relative;
+        }
+
+        input {
+            width: 100%;
+            padding: 14px 16px;
+            background-color: transparent;
+            border: 1px solid #4a5568;
+            border-radius: 8px;
+            color: #ffffff;
+            font-size: 14px;
+            transition: border-color 0.3s;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: #e0c896;
+        }
+
+        input::placeholder {
+            color: #666;
+        }
+
+        .password-toggle {
+            position: absolute;
+            right: 16px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: none;
+            border: none;
+            color: #b8b8b8;
+            cursor: pointer;
+            font-size: 18px;
+            padding: 0;
+            width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .password-toggle:hover {
+            color: #ffffff;
+        }
+
+        .link-group {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-bottom: 30px;
+        }
+
+        .link {
+            color: #4a9db8;
+            text-decoration: underline;
+            font-size: 14px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .link:hover {
+            color: #5fb3d1;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 14px;
+            background-color: #c9a961;
+            color: #1a1a1a;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-bottom: 30px;
+        }
+
+        .submit-btn:hover {
+            background-color: #d4b56e;
+        }
+    </style>
+</head>
+<body>
+    <div class="poc-banner">Firecompass POC</div>
+    <header class="header">
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .footer-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo-container">
+            <img src="https://estudantesebradi.ead.br/img/ebradi.59bd2856.svg" alt="EBRADI" class="logo">
+            <p class="subtitle">Escola Brasileira de Direito</p>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="login-container">
+            <h1>Que bom ter você aqui!</h1>
+            <p class="subtitle-text">Faça seu login abaixo</p>
+
+            <form>
+                <div class="form-group">
+                    <label for="cpf">Número da matrícula ou CPF*</label>
+                    <input 
+                        type="text" 
+                        id="cpf" 
+                        placeholder="Número da matrícula ou CPF"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Senha*</label>
+                    <div class="input-wrapper">
+                        <input 
+                            type="password" 
+                            id="password" 
+                            required
+                        >
+                        <button type="button" class="password-toggle" onclick="togglePassword()">
+                            👁
+                        </button>
+                    </div>
+                </div>
+
+                <div class="link-group">
+                    <a href="#" class="link">Esqueci minha senha</a>
+                    <a href="#" class="link">É seu primeiro acesso? Crie sua senha</a>
+                </div>
+
+                <button type="submit" class="submit-btn">Acessar</button>
+
+                <div class="footer-link">Fale Conosco</div>
+            </form>
+        </div>
+    </main>
+
+    <script>
+        function togglePassword() {
+            const passwordInput = document.getElementById('password');
+            const toggleBtn = document.querySelector('.password-toggle');
+            
+            if (passwordInput.type === 'password') {
+                passwordInput.type = 'text';
+                toggleBtn.textContent = '👁';
+            } else {
+                passwordInput.type = 'password';
+                toggleBtn.textContent = '👁';
+            }
+        }
+    </script>
+</body>
+</html>
